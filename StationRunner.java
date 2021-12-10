@@ -29,7 +29,7 @@ public class StationRunner{
 
     WeatherStation.filterByState(allstns, "IA");
 
-    for (int i = 0; i < 50; /*allstns.length;*/ i++) {
+    for (int i = 0; i < allstns.length; i++) {
       Observation ob3 = allstns[i].currentWeather(allstns[i].id, i);
       if (ob3 == null) {
         System.out.println("Station at index " + i + " did not have all required properties.");
