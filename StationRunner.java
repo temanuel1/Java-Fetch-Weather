@@ -27,7 +27,7 @@ public class StationRunner{
     }
     System.out.println("\nThe Southern most weather station is " + allstns[index].name +  " at a latitude of " + Math.abs(allstns[index].latitude) + "\n");
 
-    WeatherStation.filterByState(allstns, "Iowa");
+    WeatherStation.filterByState(allstns, "IA");
 
     for (int i = 0; i < allstns.length; i++) {
       Observation ob3 = allstns[i].currentWeather(allstns[i].id, i);
