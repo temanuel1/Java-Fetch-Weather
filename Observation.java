@@ -42,7 +42,7 @@ public class Observation {
 
   public String toString() {
    /*return "\nOn " + timeStamp + ", in " + location + ", the temperature was " + temperature + " °F and the weather was " + weather + ".";*/
-   return "Temp: " + temperature + " °F. Location: " + location + ".";
+   return "Temp: " + temperature + " °F Location: " + location;
    /*
    return "Temp: " + temperature + " °F. Weather: " + weather + ". Relative Humidity: " + relHum + "%";
    */

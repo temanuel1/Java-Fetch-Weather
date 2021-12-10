@@ -29,7 +29,7 @@ public class StationRunner{
 
     WeatherStation.filterByState(allstns, "IA");
 
-    for (int i = 0; i < allstns.length; i++) {
+    for (int i = 0; i < 50; /*allstns.length;*/ i++) {
       Observation ob3 = allstns[i].currentWeather(allstns[i].id, i);
       if (ob3 == null) {
         System.out.println("Station at index " + i + " did not have all required properties.");
@@ -37,12 +37,14 @@ public class StationRunner{
         System.out.println(ob3);
         if (ob3.temperature > warmestTemp) {
           warmestTemp = ob3.temperature;
+          warmName = ob3.location;
         }
         if (ob3.temperature < coldestTemp) {
           coldestTemp = ob3.temperature;
+          coldName = ob3.location;
         }
       }
     }
-    System.out.println("\nThe coldest temperature is " + coldestTemp + " °F. The warmest temperature is " + warmestTemp + " °F.");
+    System.out.println("\nThe coldest temperature is " + coldestTemp + " °F at " + coldName + "\n\nThe warmest temperature is " + warmestTemp + " °F at " + warmName );
   }
 }
