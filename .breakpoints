@@ -3,9 +3,17 @@
     "StationRunner.java": [
       {
         "id": "d5912eeb-dbdf-4766-9c62-11036ba685df",
-        "line": 42,
-        "version": 2384,
-        "index": 1541
+        "line": 49,
+        "version": 1,
+        "index": 1801
+      }
+    ],
+    "WeatherStation.java": [
+      {
+        "id": "c9f15afe-c439-4e12-8396-295977a4823c",
+        "line": 33,
+        "version": 1,
+        "index": 855
       }
     ]
   }
